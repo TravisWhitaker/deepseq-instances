@@ -1,7 +1,7 @@
 cabal-version:       2.2
 
 name:                deepseq-instances
-version:             0.1.0.0
+version:             0.1.0.1
 synopsis:            Candidate NFData Instances for Types in base
 description:         Candidate NFData Instances for Types in base
     This package provides correct-but-controversial NFData instances for types
@@ -24,9 +24,9 @@ source-repository head
 
 library
   exposed-modules:     Control.DeepSeq.Instances
-  build-depends:       base ^>=4.13.0.0
+  build-depends:       base >=4.13.0.0 && < 4.15
                      , array >= 0.4 && <0.6
-                     , deepseq >= 1.4.0.0
+                     , deepseq >= 1.4.0.0 && < 1.5
                      , stm >= 2.5.0.0
   hs-source-dirs:      src
   default-language:    Haskell2010
